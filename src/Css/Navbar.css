@@ -1,0 +1,94 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    z-index: 1000;
+    /* Mengatur z-index agar navbar berada di atas konten lain */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Tambahkan box shadow */
+}
+
+.navbar-logo {
+    color: #fff;
+    font-size: 24px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Tambahkan efek shadow pada teks */
+}
+
+.navbar-nav {
+    display: flex;
+    list-style: none;
+}
+
+.nav-item {
+    margin-right: 20px;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Tambahkan efek shadow pada teks */
+}
+
+.navbar-icons {
+    display: flex;
+    align-items: center; /* Menyesuaikan ikon dengan input */
+}
+
+.icon-link {
+    margin-right: 20px;
+    color: #fff;
+    font-size: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Tambahkan efek shadow pada ikon */
+}
+
+.search-box {
+    display: flex;
+    align-items: center; /* Menyesuaikan input dengan ikon */
+    margin-right: 10px;
+}
+
+input[type="text"] {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Tambahkan box shadow pada input */
+}
+
+.search-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Tambahkan efek shadow pada ikon */
+    margin-right: 30px;
+}
+
+.search-button:hover {
+    color: #ccc;
+}
+
+/* Tambahkan media query untuk responsivitas */
+@media only screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .navbar-nav {
+        margin-top: 20px;
+    }
+
+    .nav-item {
+        margin: 10px 0;
+    }
+
+    .search-box {
+        margin-top: 20px;
+    }
+}

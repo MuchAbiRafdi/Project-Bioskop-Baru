@@ -1,0 +1,17 @@
+.card-container {
+    padding: 10px; /* Tambahkan padding */
+    border-radius: 10px; /* Tambahkan border radius agar card melengkung */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Tambahkan shadow untuk efek depth */
+    transition: box-shadow 0.3s ease; /* Tambahkan efek transisi saat hover */
+    margin: 10px; /* Sesuaikan margin sesuai kebutuhan */
+}
+
+.card-container:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Perbesar shadow saat hover */
+}
+
+.card-image {
+    width: 100%; /* Buat gambar mengisi width card */
+    height: auto; /* Sesuaikan tinggi secara otomatis */
+    border-radius: 10px; /* Tambahkan border radius agar gambar melengkung */
+}
